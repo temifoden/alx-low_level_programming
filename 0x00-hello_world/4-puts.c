@@ -1,9 +1,9 @@
 #include <stdio.h>
 
+// main - Entry point
 int main(void)
 {
   /**
- * main - Entry point
  *
  * Description: Prints "Programming is like building a multilingual puzzle,"
  *              followed by a new line using the puts function.
