@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: "the program prints lowercase a-z"
+ * Description: "the program prints lowercase a-z, excluding e and q"
  *
  * Return: Always 0 (Success)
  */
@@ -14,7 +14,7 @@ char letter;
 letter = 'a';
 while (letter <= 'z')
 {
-if(letter != 'q' && letter != 'e')
+if (letter != 'q' && letter != 'e')
 {
 putchar(letter);
 }
