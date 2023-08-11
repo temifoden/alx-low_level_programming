@@ -17,5 +17,6 @@ while (letter <= 'z')
 putchar(letter);
 letter++;
 }
+ putchar(10);
 return (0);
 }
