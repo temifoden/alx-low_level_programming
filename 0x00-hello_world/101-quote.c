@@ -5,7 +5,8 @@
  * main - Entry point
  *
  * Description: "Prints a specific text to the standard error."
- *              Returns: Always 1
+ *
+ * Return: Always 1 (unsuccessful)
  */
 int main(void)
 {
