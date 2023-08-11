@@ -25,14 +25,14 @@ printf("Last digit of %d is %d", n, lastDigit);
 
 if (lastDigit > 5)
 {
-puts("and greater than 5");
+puts(" and is greater than 5");
 }
 else if (lastDigit == 0){
-puts("and is 0");
+puts(" and is 0");
 }
 else
 {
-printf("less than 6 and not 0");
+printf(" and is less than 6 and not 0");
 }
 return(0);
 }
