@@ -17,6 +17,6 @@ while (num < 10)
 putchar(num);
 num++;
 }
-putchar(10);
+
 return (0);
 }
