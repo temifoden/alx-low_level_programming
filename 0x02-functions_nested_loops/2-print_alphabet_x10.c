@@ -20,6 +20,6 @@ for (first_letter = 'a'; first_letter <= 'z'; first_letter++)
 putchar(first_letter);
 }
 putchar('\n');
-x++
+x++;
 }
 }
