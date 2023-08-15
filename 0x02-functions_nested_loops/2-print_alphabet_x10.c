@@ -13,7 +13,8 @@ void print_alphabet_x10(void)
 {
 int first_letter;
 int x;
-while(x < 10)
+x=0;
+while (x < 10)
 {
 for (first_letter = 'a'; first_letter <= 'z'; first_letter++)
 {
