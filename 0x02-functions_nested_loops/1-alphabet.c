@@ -3,7 +3,8 @@
 
 /**
  * Description - function that prints a-z
- * Return - success (0)
+ *
+ * Return: Always 0.
  */
 
 void print_alphabet(void)
