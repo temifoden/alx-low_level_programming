@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_sign - entry
+ * _abs - entry point
  *
  * Description - function that prints a-z
  *
- * @x: int x is the integer
+ * @n: int n is the integer
  *
  * Return: Always 0 (Success)
  */
