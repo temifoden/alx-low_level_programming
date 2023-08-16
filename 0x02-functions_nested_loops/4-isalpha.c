@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _islower - entry
+ * _isalpha - entry
  *
  * Description - function that prints a-z
  *
@@ -10,7 +10,7 @@
  * Return: Always 0 (Success)
  */
 
-int _islower(int c)
+int _isalpha(int c)
 {
 if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 {
