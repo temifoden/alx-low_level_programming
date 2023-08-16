@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - Entry point
+ * _islower - entry
  *
  * Description - function that prints a-z
  *
@@ -16,7 +16,8 @@ int _islower(int c)
 if (c >= 'a' && c <= 'z')
 {
 return (1);
-}else
+}
+else
 {
 return (0);
 }
