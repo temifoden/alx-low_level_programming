@@ -22,16 +22,21 @@ if (out >= 10)
 {
 _putchar('0' + out / 10);
 _putchar('0' + out % 10);
-}
-else
-{
-_putchar('0' + out);
-}
 if (y != 9)
 {
 _putchar(',');
 _putchar(' ');
-_putchar(' '); 
+}
+}
+else
+{
+_putchar('0' + out);
+if (y != 9)
+{
+_putchar(',');
+_putchar(' ');
+_putchar(' ');
+}
 }
 }
 _putchar(10);
