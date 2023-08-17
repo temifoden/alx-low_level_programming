@@ -13,6 +13,6 @@
 
 int mul(int a, int b)
 {
-int result = x * y;
+int result = a * b;
 return (result);
 }
