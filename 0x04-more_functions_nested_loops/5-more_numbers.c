@@ -4,7 +4,7 @@
 /**
  * more_numbers - Entry point
  *
- * Description - function that prints a-z
+ * Description - function prints 0-14, 10times
  *
  * Return: Always 0 (Success)
  */
@@ -19,7 +19,7 @@ while (x < 10)
 
 for (first_letter = 0; first_letter < 15; first_letter++)
 {
-if (first_letter > 10)
+if (first_letter >= 10)
 {
 _putchar('0' + first_letter / 10);
 _putchar('0' + first_letter % 10);
