@@ -10,7 +10,7 @@
  * Return: Always 0 (Success)
  */
 
-int _isupper(int c)
+int _isdigit(int c)
 {
 if (c >= '0' && c <= '9')
 {
