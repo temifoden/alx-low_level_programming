@@ -1,59 +1,53 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * fizz_buzz - Entry point
+ * main - Entry point
  *
  * Description - function prints 0-14, 10times
  *
  * Return: Always 0 (Success)
  */
 
-void fizz_buzz(void)
+int main(void)
 {
 int i;
 for (i = 1; i <= 100; i++)
 {
 if (i % 3 == 0 && i % 5 == 0)
 {
-_putchar('F');
-_putchar('i');
-_putchar('z');
-_putchar('z');
-_putchar('B');
-_putchar('u');
-_putchar('z');
-_putchar('z');
-_putchar(' ');
+printf("Fizzbuzz ");
 }
 else if (i % 3 == 0)
 {
-_putchar('F');
-_putchar('i');
-_putchar('z');
-_putchar(' ');
+putchar('F');
+putchar('i');
+putchar('z');
+putchar('z');
+putchar(' ');
 }
 else if (i % 5 == 0)
 {
-_putchar('B');
-_putchar('u');
-_putchar('z');
-_putchar('z');
-_putchar(' ');
+putchar('B');
+putchar('u');
+putchar('z');
+putchar('z');
+putchar(' ');
 }
 else
 {
 if (i >= 10)
 {
-_putchar('0' + i / 10);
-_putchar('0' + i % 10);
-_putchar(' ');
+putchar('0' + i / 10);
+putchar('0' + i % 10);
+putchar(' ');
 }
 else
 {
-_putchar('0' + i);
-_putchar(' ');
+putchar('0' + i);
+putchar(' ');
 }
 }
 }
 printf("\n");
+return (0);
 }
