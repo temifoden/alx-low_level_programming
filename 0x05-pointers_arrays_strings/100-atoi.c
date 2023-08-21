@@ -13,9 +13,12 @@
 
 int _atoi(char *s)
 {
-int result = 0;
-int sign = 1;
-int i = 0;
+int result;
+result = 0;
+int sign;
+sign = 1;
+int i;
+i = 0;
 
 if (s[i] == '-')
 {
@@ -34,5 +37,5 @@ result = result * 10 + (s[i] - '0');
 i++;
 }
 
-return (result * sign);
+return (result *sign);
 }
