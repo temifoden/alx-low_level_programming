@@ -17,17 +17,18 @@
 
 int main(void)
 {
-srand(time(NULL));
-
-
 char validChars[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 int validCharsCount = sizeof(validChars) - 1;
 
 char password[PASSWORD_LENGTH + 1];
 
+int i;
+srand(time(NULL));
+
+
 printf("Generating valid password for 101-crackme...\n");
 
-for (int i = 0; i < PASSWORD_LENGTH; i++)
+for (i = 0; i < PASSWORD_LENGTH; i++)
 {
 int randomIndex = rand() % validCharsCount;
 password[i] = validChars[randomIndex];
