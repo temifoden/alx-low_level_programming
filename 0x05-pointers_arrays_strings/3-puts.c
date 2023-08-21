@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * _puts - Prints a string followed by a new line to stdout.
@@ -13,5 +12,10 @@
 
 int _puts(char *str)
 {
-puts(str);
+while(*str != '\0')
+{
+_putchar(*str);
+str++;
+}
+_putchar(10);
 }
