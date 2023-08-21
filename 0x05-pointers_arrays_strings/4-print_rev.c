@@ -21,7 +21,7 @@ length++;
 s++;
 }
 
-while (i = length - 1; i >= 0; i--)
+while (i = (length - 1); i >= 0; i--)
 {
 _putchar(s[i]);
 }
