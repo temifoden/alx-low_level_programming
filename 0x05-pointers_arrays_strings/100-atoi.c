@@ -37,5 +37,5 @@ result = result * 10 + (s[i] - '0');
 i++;
 }
 
-return (result *sign);
+return (result * sign);
 }
