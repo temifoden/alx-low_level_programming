@@ -29,5 +29,4 @@ _putchar(str[start]);
 start++;
 }
 
-_putchar(10);
 }
