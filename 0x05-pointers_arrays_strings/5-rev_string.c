@@ -12,19 +12,23 @@
 
 void rev_string(char *s)
 {
-int length = 0;
-int i;
+char *start = s;
+char *end = s;
 
-while (s[length] != '\0')
-{
-length++;
-}
 
-i = length - 1;
-while (i >= 0)
+while (*end != '\0')
 {
-_putchar(s[i]);
-i--;
+end++;
 }
-_putchar(10);
+end--;
+
+while (start < end)
+{
+char temp = *start;
+*start =  *end;
+*end = temp;
+
+start++;
+end--;
+}
 }
