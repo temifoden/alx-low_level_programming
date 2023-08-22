@@ -17,7 +17,7 @@ i = 0;
 
 while (str[i] != '\0')
 {
-if (str[i +1] == '\0')
+if (str[i + 1] == '\0')
 {
 _putchar(str[i]);
 break;
