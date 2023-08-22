@@ -28,5 +28,5 @@ while (start <= length)
 _putchar(str[start]);
 start++;
 }
-
+_putchar(10);
 }
