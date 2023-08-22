@@ -22,7 +22,7 @@ length++;
 }
 
 
-start = length / 2;
+start = (length + 1) / 2;
 while (start <= length)
 {
 _putchar(str[start]);
