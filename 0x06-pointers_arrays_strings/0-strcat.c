@@ -8,19 +8,22 @@
  * Return: A pointer to the resulting concatenated string.
  */
 
-char *_strcat(char *dest, char *src){
-    char *original_dest = dest;
+char *_strcat(char *dest, char *src)
+{
+char *original_dest = dest;
 
-    while (*dest != '\0'){
-        dest++;
-    }
+while (*dest != '\0')
+{
+dest++;
+}
 
 
-    while (*src != '\0'){
-        *dest = *src;
-        dest++;
-        src++;
-    }
+while (*src != '\0')
+{
+*dest = *src;
+dest++;
+src++;
+}
 
-    return (original_dest);
+return (original_dest);
 }
