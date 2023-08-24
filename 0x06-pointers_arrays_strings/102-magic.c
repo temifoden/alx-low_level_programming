@@ -2,7 +2,6 @@
 
 /**
 * main - write magic.
-*
 * Return: 0
 */
 
