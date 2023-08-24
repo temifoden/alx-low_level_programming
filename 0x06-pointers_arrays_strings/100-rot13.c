@@ -3,7 +3,7 @@
 /**
  * rot13 - Encides a string using the ROT13 cipher.
  * @s: The input string to encode.
- * 
+ *
  * Return: A pointer to the encoded string.
 */
 
