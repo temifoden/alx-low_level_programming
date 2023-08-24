@@ -9,23 +9,23 @@
 
 char *rot13(char *s)
 {
-    char *result = s;
-    int i;
-    char *input = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-    char *output = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-    
-    while (*s)
-    {
-        for (i = 0; i < 52; i++)
-        {
-            if (*s == input[i])
-            {
-                *s = output[i];
-                break;
-            }
-        }
-        s++;
-    }
+char *result = s;
+int i;
+char *input = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+char *output = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-    return (result);
+while (*s)
+{
+for (i = 0; i < 52; i++)
+{
+if (*s == input[i])
+{
+*s = output[i];
+break;
+}
+}
+s++;
+}
+
+return (result);
 }
