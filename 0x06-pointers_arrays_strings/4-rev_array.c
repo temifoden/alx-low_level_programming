@@ -5,19 +5,18 @@
  * @a: array to reverse.
  * @n: number of element present in array.
  *
- * Return: elements of an array. Last now becomes first 
- * and first becomes last.
+ * Return: void
  */
 
 void reverse_array(int *a, int n)
 {
-int i;
-int temp;
+    int i;
+    int temp;
 
-for (i = 0; i < (n / 2); i++)
-{
-temp = a[i];
-a[i] = a[n - 1 - i];
-a[n - 1 - i] = temp;
-}
+    for (i = 0; i < (n / 2); i++)
+    {
+        temp = a[i];
+        a[i] = a[n - 1 - i];
+        a[n - 1 - i] = temp;
+    }
 }
