@@ -9,7 +9,6 @@
 
 char *rot13(char *s)
 {
-    char *start = s;
     char *result = s;
     int i;
     char *input = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
