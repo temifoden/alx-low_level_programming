@@ -5,7 +5,7 @@
  * is_seperator - checks if a character is a word seperator.
  * @c: the character to check.
  * 
- * Return: true of c is a seperator and false if otherwise.
+ * Return: true if c is a seperator and false if otherwise.
 */
 
 bool is_separator(char c)
@@ -32,24 +32,25 @@ return (false);
 
 char *cap_string(char *s)
 {
-    bool new_word = true;
-    char *ptr = s;
+bool new_word = true;
+char *ptr = s;
 
-    while (*ptr){
-        if (new_word && *ptr >= 'a' && *ptr <= 'z')
-        {
-            *ptr = *ptr - 'a' + 'A';
-            new_word = false;
-        }
-        else if (is_separator(*ptr))
-        {
-            new_word = true;
-        }
-        else
-        {
-            new_word = false;
-        }
-        ptr++;
-    }
-    return (s);
+while (*ptr)
+{
+if (new_word && *ptr >= 'a' && *ptr <= 'z')
+{
+*ptr = *ptr - 'a' + 'A';
+new_word = false;
+}
+else if (is_separator(*ptr))
+{
+new_word = true;
+}
+else
+{
+new_word = false;
+}
+ptr++;
+}
+return (s);
 }
