@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * main - Entry
+ * Return: Nothing
+*/
+
 int main(void)
 {
   int n;
