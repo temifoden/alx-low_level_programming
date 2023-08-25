@@ -19,21 +19,9 @@ if (n < 10)
 {
 _putchar('0' + n);
 }
-else if (n >= 10 && n < 100)
-{
-_putchar('0' + n / 10);
-_putchar('0' + n % 10);
-}
-else if (n >= 100 && n < 999)
-{
-_putchar('0' + n / 100);
-_putchar('0' + (n / 10) % 10); 
-print_number(n % 10);
-}
 else
 {
-_putchar('0' + n / 1000);
-_putchar('0' + (n / 100) % 10);
-print_number(n % 100);
+print_number(n / 10);
+_putchar(n % 10); 
 }
 }
