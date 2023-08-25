@@ -20,5 +20,5 @@ if (*ptr >= 'a' && *ptr <= 'z')
 }
 ptr++;
 }
-return s;
+return (s);
 }
