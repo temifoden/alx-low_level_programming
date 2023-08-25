@@ -4,7 +4,7 @@
  * print_number - prints an integer.
  * @n: The input value.
  *
- * Return: None
+ * Return: The integer
 */
 
 void print_number(int n)
@@ -22,6 +22,6 @@ _putchar('0' + n);
 else
 {
 print_number(n / 10);
-_putchar('0' + n % 10); 
+_putchar('0' + n % 10);
 }
 }
