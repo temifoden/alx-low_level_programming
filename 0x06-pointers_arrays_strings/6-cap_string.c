@@ -2,7 +2,7 @@
 #include <stdbool.h>
 
 /**
- * is_seperator - checks if a character is a word seperator.
+ * is_separator - checks if a character is a word seperator.
  * @c: the character to check.
  *
  * Return: true if c is a seperator and false if otherwise.
