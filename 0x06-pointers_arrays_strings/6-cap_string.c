@@ -32,8 +32,10 @@ return (false);
 
 char *cap_string(char *s)
 {
-bool new_word = true;
 char *ptr = s;
+
+bool new_word;
+new_word = true;
 
 while (*ptr)
 {
