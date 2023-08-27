@@ -15,6 +15,11 @@ int len1;
 int len2;
 int carry;
 int max_length;
+int i;
+int j;
+int k;
+int start;
+int end;
 
 carry = 0;
 len1 = 0;
@@ -35,9 +40,9 @@ if (len1 > max_length || len2 > max_length)
 return (0);
 }
 
-int i = len1 - 1;
-int j = len2 - 1;
-int k = 0;
+j = len2 - 1;
+i = len1 - 1;
+k = 0;
 
 while (i >= 0 || j >= 0 || carry > 0) {
 int digit1 = (i >= 0) ? n1[i] - '0' : 0;
@@ -55,8 +60,8 @@ j--;
 r[k] = '\0';
 
     
-int start = 0;
-int end = k - 1;
+start = 0;
+end = k - 1;
 while (start < end)
 {
 char temp = r[start];
