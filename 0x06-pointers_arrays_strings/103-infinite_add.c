@@ -7,14 +7,19 @@
  * @r: the hold result
  * @size_r: the size of buffer
  *
- * Return: The integer
+ * Return: result and 0 if error
 */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-int len1 = 0;
-int len2 = 0;
-int carry = 0;
-int max_length = size_r - 1;
+int len1;
+int len2;
+int carry;
+int max_length;
+
+carry = 0;
+len1 = 0;
+len2 = 0;
+max_length = size_r - 1;
 
 while (n1[len1] != '\0')
 {
