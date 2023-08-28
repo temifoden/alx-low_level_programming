@@ -6,7 +6,7 @@
  * @src: where to copy from
  * @n: size characters to copy from src.
  *
- * Return: the content of dest
+ * Return: original_dest
 */
 
 char *_memcpy(char *dest, char *src, unsigned int n)

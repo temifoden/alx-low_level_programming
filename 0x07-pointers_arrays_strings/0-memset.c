@@ -6,19 +6,19 @@
  * @b: value to fill with
  * @n: size of the buffer
  *
- * Return: the content of the buffer
+ * Return: Pointer
 */
 
 char *_memset(char *s, char b, unsigned int n)
 {
 char *pointer;
 unsigned int i;
-
 pointer = s;
 for (i = 0; i < n; i++)
 {
 *s = b;
 s++;
 }
+
 return (pointer);
 }
