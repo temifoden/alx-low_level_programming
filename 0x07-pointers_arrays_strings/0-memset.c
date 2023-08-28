@@ -19,5 +19,5 @@ for (i = 0; i < n; i++)
 *s = b;
 s++;
 }
-return pointer;
+return (pointer);
 }
