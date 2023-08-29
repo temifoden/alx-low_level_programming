@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * memcpy - Function entry
+ * _memcpy - Function entry
  * @dest: the destination to copy into.
  * @src: where to copy from
  * @n: size characters to copy from src.
@@ -12,7 +12,6 @@
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 char *original_dest = dest;
-
 
 while (n > 0)
 {
