@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * memset - Function entry
- * @s: the start of the buffer
- * @b: value to fill with
- * @n: size of the buffer
+ * memset - prints an integer.
+ * @s: The input value.
+ * @b: the character
+ * @n: number
  *
- * Return: Pointer
+ * Return: Nothing
 */
 
 char *_memset(char *s, char b, unsigned int n)
