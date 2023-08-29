@@ -4,11 +4,11 @@
  * _strspn - program entry
  * @s: string to check through
  * @accept: the set of characters to check in s
- * 
+ *
  * Description: the prigram returns the number of occurence of
  * characters of "accept" in "s".
- * 
- * Return: count
+ *
+ * Return: value of count
 */
 
 unsigned int _strspn(char *s, char *accept)
@@ -33,5 +33,5 @@ if (accept[j] == '\0')
 break;
 }
 }
-return count;
+return (count);
 }
