@@ -1,19 +1,19 @@
 #include "main.h"
 
 /**
- * memset - prints an integer.
- * @s: The input value.
- * @b: the character
- * @n: number
+ * memset - Function entry
+ * @s: the start of the buffer
+ * @b: value to fill with
+ * @n: size of the buffer
  *
- * Return: Nothing
+ * Return: Pointer
 */
 
 char *_memset(char *s, char b, unsigned int n)
 {
-char *pointer;
+char *pointer = s;
 unsigned int i;
-pointer = s;
+
 for (i = 0; i < n; i++)
 {
 *s = b;
