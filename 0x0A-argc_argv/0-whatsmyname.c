@@ -2,6 +2,8 @@
 
 /**
  * main - Entry point of the program.
+ * @argc: first argument
+ * @argv: second argument
  *
  * Description:
  *   This program prints its name, including the path, without having to
