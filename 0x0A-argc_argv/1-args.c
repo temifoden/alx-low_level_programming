@@ -2,6 +2,8 @@
 
 /**
  * main - Entry point of the program.
+ * @argc: first argument
+ * @argv: second argument
  *
  * Description:
  *   This program prints the number of arguments passed into it, excluding the
