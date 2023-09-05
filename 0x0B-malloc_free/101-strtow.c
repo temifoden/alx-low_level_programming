@@ -25,8 +25,8 @@ return (c == ' ');
 int count_words(char *str)
 {
 int count;
-count = 0;
 bool in_word;
+count = 0;
 in_word = false;
 
 while(*str)
@@ -99,8 +99,8 @@ free(words[j]);
 free(words);
 return (NULL);
 }
-str -= word_len;
 int k;
+str -= word_len;
 
 for (k = 0; k < word_len; k++)
 words[i][k] = *str++;
