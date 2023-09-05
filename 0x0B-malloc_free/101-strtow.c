@@ -93,13 +93,13 @@ words[i] = (char *)malloc((word_len + 1) * sizeof(char));
 if (words[i] == NULL)
 {
 int j;
+int k;
 for (j = 0; j < i; j++)
 free(words[j]);
                 
 free(words);
 return (NULL);
 }
-int k;
 str -= word_len;
 
 for (k = 0; k < word_len; k++)
