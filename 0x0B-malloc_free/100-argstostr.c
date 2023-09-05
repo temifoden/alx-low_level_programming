@@ -30,10 +30,10 @@ len++;
 
 }
 
-total_len += len;
+total_len += len + ac;
 
 result = (char *)malloc((total_len + 1) * sizeof(char));
-    
+
 if (result == NULL)
 return (NULL);
 
@@ -41,7 +41,7 @@ pos = 0;
 for (i = 0; i < ac; i++)
 {
 
-for(j = 0; av[i][j]; j++)
+for (j = 0; av[i][j]; j++)
 result[pos++] = av[i][j];
 
 result[pos++] = '\n';
