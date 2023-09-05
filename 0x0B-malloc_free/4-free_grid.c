@@ -3,7 +3,8 @@
 #include <stddef.h>
 
 /**
- * free_grid - Deallocate memory for a 2D grid previously created by alloc_grid.
+ * free_grid - Deallocate memory for a 2D grid previously created by
+ * alloc_grid.
  *
  * Description:
  * This function takes a pointer to a 2D grid and the 'height' of the grid,
