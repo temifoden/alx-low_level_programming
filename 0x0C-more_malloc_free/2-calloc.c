@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stddef.h>
 #include <stdlib.h>
-#include <string.h>
 
 
 /**
@@ -19,20 +18,14 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 unsigned int *ptr;
-unsigned int i;
-i = 0;
-size_t total_size;
-total_size = nmemb * size;
 
 if (nmemb == 0 || size == 0)
 return (NULL);
 
-ptr = malloc(total_size);
+ptr = calloc(nmemb, size);
 
 if (ptr == NULL)
 return (NULL);
-
-memset(ptr, 0, total_size);
 
 return (ptr);
 }
