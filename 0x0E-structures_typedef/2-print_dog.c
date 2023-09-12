@@ -22,13 +22,13 @@ else
 printf("Name: %s\n", d->name);
 }
 
-if (d->age <= 0)
+if (d->age >= 0)
 {
-printf("Age: (nil)\n");
+printf("Age: %f\n", d->age);
 }
 else
 {
-printf("Age: %f\n", d->age);
+printf("Age: (nil)\n");
 }
 
 if (d->owner == NULL)
@@ -39,6 +39,5 @@ else
 {
 printf("Owner: %s\n", d->owner);
 }
-
 }
 }
