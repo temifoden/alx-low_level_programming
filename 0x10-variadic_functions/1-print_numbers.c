@@ -11,18 +11,21 @@
  * Return: Nothing
 */
 
-void print_numbers(const char *separator, const unsigned int n, ...){
-    unsigned int i;
-    va_list my_list;
-    va_start(my_list, n);
+void print_numbers(const char *separator, const unsigned int n, ...)
+{
+unsigned int i;
+va_list my_list;
+va_start(my_list, n);
 
-    if (separator != NULL && n > 0){
-
-        for (i = 0; i < n; i++){
-            printf("%d", va_arg(my_list, int) );
-            if (i != (n - 1))
-            printf("%s", separator);
-        }
-    }
-    printf("\n");
+if (n > 0)
+{
+for (i = 0; i < n; i++)
+{
+printf("%d", va_arg(my_list, int));
+if (separator != NULL && i != (n - 1))
+printf("%s", separator);
+}
+}
+printf("\n");
+va_end(my_list);
 }
