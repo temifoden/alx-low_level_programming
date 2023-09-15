@@ -27,7 +27,7 @@ current_string = va_arg(my_list, char *);
 if (current_string != NULL)
 printf("%s", current_string);
 else
-printf("nil");
+printf("(nil)");
 if (separator != NULL && i != (n - 1))
 printf("%s", separator);
 }
