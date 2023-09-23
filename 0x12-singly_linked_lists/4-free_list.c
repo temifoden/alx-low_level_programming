@@ -5,6 +5,7 @@
  * free_list - Freees a list_t list
  * @head: Pointer to the head of the list.
  *
+ * Return: Nothing
 */
 
 void free_list(list_t *head)
