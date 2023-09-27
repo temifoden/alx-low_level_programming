@@ -4,7 +4,7 @@
 
 /**
  * free_listint_safe - Function frees the memory space of a linked list
- * @head: pointer to the head pointer
+ * @h: pointer to the head pointer
  *
  * Return: Return count
 */
