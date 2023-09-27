@@ -5,7 +5,7 @@
 
 /**
  * reverse_listint - Reverses a linked list
- * @nead: A pointer to the head of of the list
+ * @head: A pointer to the head of of the list
  *
  * Return: A pointer to the first node of the reversed list
  *
