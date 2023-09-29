@@ -5,7 +5,7 @@
  * binary_to_uint - function converts binary to unsigned integer
  * @b: pointer to the binary literal
  *
- * Return: integer value
+ * Return: result
 */
 
 unsigned int binary_to_uint(const char *b)
