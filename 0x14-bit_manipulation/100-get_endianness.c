@@ -14,5 +14,5 @@ char *byte;
 value = 1;
 byte = (char *)&value;
 
-return (int)*byte;
+return ((int)*byte);
 }
