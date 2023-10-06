@@ -23,7 +23,7 @@ fd = open(filename, O_RDONLY);
 if (fd == -1)
 return (0);
 
-buffer = (char *)malloc (sizeof(char) * letters);
+buffer = (char *)malloc(sizeof(char) * letters);
 if (buffer == NULL)
 {
 close(fd);
