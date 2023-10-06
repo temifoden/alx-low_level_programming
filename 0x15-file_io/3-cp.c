@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
         exit(99);
     }
     bytes_read = 0;
-    while((bytes_read == read(fd_src, buffer, BUFSIZE)) > 0){
+    while((bytes_read = read(fd_src, buffer, BUFSIZE)) > 0){
         bytes_written = write(fd_dest, buffer, bytes_read);
         if (bytes_written == -1){
             dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
