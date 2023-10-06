@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <fcntl.h>
+#include <string.h>
+
 
 #define BUFSIZE 1024
 
@@ -27,6 +29,11 @@ int main(int argc, char *argv[])
 
     file_from = argv[1];
     file_to = argv[2];
+
+    if (strcmp(file_from, file_to) == 0){
+      dprintf(STDERR_FILENO, "Error: %s and %s are the same file\n", file_from, file_to);
+      exit(100);
+    }
 
     fd_src = open(file_from, O_RDONLY);
     if (fd_src == -1)
