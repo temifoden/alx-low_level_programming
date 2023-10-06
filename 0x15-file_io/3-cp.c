@@ -17,6 +17,8 @@ int main(int argc, char *argv[])
 {
     char *file_from, *file_to;
     int fd_src, fd_dest;
+    ssize_t bytes_read, bytes_written;
+    char buffer[BUFSIZE];
     if (argc != 3)
     {
         dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
@@ -39,10 +41,7 @@ int main(int argc, char *argv[])
         close(fd_src);
         exit(99);
     }
-
-    ssize_t bytes_read, bytes_written;
-    char buffer[BUFSIZE];
-
+    bytes_read = 0;
     while((bytes_read == read(fd_src, buffer, BUFSIZE)) > 0){
         bytes_written = write(fd_dest, buffer, bytes_read);
         if (bytes_written == -1){
@@ -54,7 +53,7 @@ int main(int argc, char *argv[])
     }
 
     if (bytes_read == -1){
-        dprinf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
+        dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
         close(fd_src);
         close(fd_dest);
         exit(98);
