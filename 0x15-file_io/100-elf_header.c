@@ -9,6 +9,7 @@
 /**
  * error_exit - Display an error message to stderr and exit with status 98.
  * @message: The error message to display.
+ * Return: Nothing
  */
 
 void error_exit(const char *message) {
