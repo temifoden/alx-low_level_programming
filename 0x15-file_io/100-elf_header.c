@@ -56,7 +56,7 @@ int main(int argc, char *argv[])
 {
   const char *filename;
   int fd;
-  Elf64_Ehdr ehdr;
+  Elf64_Ehdr header;
   ssize_t bytes_read;
     if (argc != 2)
     {
@@ -71,7 +71,6 @@ int main(int argc, char *argv[])
         return (98);
     }
 
-    Elf64_Ehdr header;
     bytes_read = read(fd, &header, sizeof(header));
     if (bytes_read == -1 || bytes_read != sizeof(header) || header.e_ident[EI_MAG0] != ELFMAG0 || header.e_ident[EI_MAG1] != ELFMAG1 || header.e_ident[EI_MAG2] != ELFMAG2 || header.e_ident[EI_MAG3] != ELFMAG3)
     {
