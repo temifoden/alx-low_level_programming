@@ -1,0 +1,12 @@
+#!/bin/bash
+
+STRINGS="$(strings crackme2)"
+for STRING in $STRINGS; do
+    cp crackme2 b.out
+    RESULT="$(./b.out $STRING)"
+    if [[ $RESULT == *"Access Granted\0/"* ]]
+    then
+	printf "%s" $STRING
+	break;
+    fi;
+done
