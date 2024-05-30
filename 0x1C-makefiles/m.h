@@ -1,4 +1,4 @@
-ifndef _M_N_
+#ifndef _M_N_
 #define _M_N_
 
 #include <stdlib.h>
